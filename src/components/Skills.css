@@ -1,0 +1,21 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-badge {
+  padding: 0.5rem 1.25rem;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background-color: var(--accent-white);
+  border-radius: 50px;
+}
+
+.skill-badge.highlight {
+  background-color: var(--accent-yellow);
+}

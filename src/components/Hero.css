@@ -1,0 +1,119 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 6rem 2rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-greeting {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.highlight-yellow {
+  color: var(--accent-yellow);
+  -webkit-text-stroke: 2px black;
+  text-shadow: 4px 4px 0px #000;
+}
+
+.hero-role-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.role-line {
+  width: 100px;
+  height: var(--border-width);
+  background-color: var(--border-color);
+  border: none;
+}
+
+.hero-role {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--accent-pink);
+  position: relative;
+  z-index: 2;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.decoration {
+  position: absolute;
+  z-index: 1;
+}
+
+.decoration.shape-rect {
+  top: -20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--accent-yellow);
+}
+
+.decoration.shape-circle {
+  bottom: -10px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--accent-pink);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  .hero-role-wrapper {
+    justify-content: center;
+  }
+  .role-line {
+    display: none;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+}
